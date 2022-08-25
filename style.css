@@ -1,20 +1,35 @@
 * {
-   margin: 0;
-   box-sizing: border-box;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 :root {
-  font-size: 62,5%; /* 10px = 1rem */
- 
+  font-size: 62.5%; /* 10px = 1rem */
+
   --primary-color: hsl(170, 100%, 26%);
+  --green-light: hsl(148, 23%, 89%);
   --headline: hsl(210, 11%, 15%);
   --paragraph: hsl(210, 9%, 31%);
-  --secondary-color: hsl(0, 0%, 100%);
 }
 
 body {
-  font-family:'Dm Sans';
+  font-family: 'Dm Sans';
   text-align: center;
+}
+
+nav {
+  background-color: var(--green-light);
+  width: 37.5rem;
+  height: 7.2rem;
+  margin-inline: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 4rem;
+}
+
+nav a {
+  margin-inline: 2.4rem;
 }
 
 header {
@@ -22,40 +37,40 @@ header {
   margin-left: auto;
   margin-right: auto;
   margin-top: 4.1rem;
+  background-color: var(--green-light);
 }
 
-h4 {
+header h4 {
   font-size: 1.4rem;
   color: var(--primary-color);
   margin-bottom: 1.6rem;
 }
 
-h1 {
+header h1 {
   font-size: 3.4rem;
   color: var(--headline);
   line-height: 130%;
   margin-bottom: 2.4rem;
-  
 }
 
-p {
- font-size: 1.8rem;
- line-height: 150%;
- color: var(--paragraph);
- margin-bottom: 3.2rem;
+header p {
+  font-size: 1.8rem;
+  line-height: 150%;
+  color: var(--paragraph);
+  margin-bottom: 3.2rem;
 }
 
-button {
+header button {
   width: 26.3rem;
   height: 5.2rem;
   background-color: var(--primary-color);
   border: none;
   border-radius: 4rem;
- 
-  margin-bottom: 6rem ;
-  margin-inline: auto ;
-  
-  color: var(--secondary-color);
+
+  margin-bottom: 6rem;
+  margin-inline: auto;
+
+  color: white;
   font-size: 1.4rem;
   text-transform: uppercase;
   font-weight: 700;
@@ -64,4 +79,27 @@ button {
   align-items: center;
   justify-content: center;
   gap: 1.6rem;
+}
+
+.stats {
+  width: 32.7rem;
+  height: 47rem;
+  background-color: #fffaf1;
+  border: 1px solid #dce9e2;
+  border-radius: 6px;
+  margin-inline: auto;
+}
+
+.stat li {
+  list-style: none;
+  margin-top: 4rem;
+}
+
+.stat h3 {
+  font-size: 4.8rem;
+  line-height: 130%;
+}
+
+.stat p {
+  color: var(--primary-color);
 }
